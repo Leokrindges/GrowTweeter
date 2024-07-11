@@ -1,5 +1,3 @@
-import { TweetType } from "../../tweet/tweet.types";
-
 export interface SignUpRequestBody {
   ok: boolean;
   message: string;
@@ -18,12 +16,16 @@ export interface SignUpRequestBody {
 export interface SignUpResponse {
   ok: boolean;
   message: string;
-  data?: {
+  data: {
     id: string;
-    content: string | null;
-    type: TweetType;
-    userId: string;
+    name: string;
+    email: string;
+    username: string;
+    password: string;
     createdAt: Date;
+    deleted: boolean;
+    deletedAt: Date | null;
+    authToken: string | null;
   };
 }
 
