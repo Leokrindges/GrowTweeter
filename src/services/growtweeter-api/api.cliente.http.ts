@@ -15,6 +15,31 @@ export interface ResponseAPI {
     userId: string;
     createdAt: Date;
   };
+  tweet?: [
+    {
+      id: string;
+      content: string | null;
+      type: TweetType;
+      userId: string;
+      createdAt: Date;
+      like?: [
+        {
+          user: {
+            name: string;
+            username: string;
+          };
+        }
+      ];
+      reply?: [
+        {
+          user: {
+            name: string;
+            username: string;
+          };
+        }
+      ];
+    }
+  ];
   pagination?: {
     limit: number;
     page: number;
