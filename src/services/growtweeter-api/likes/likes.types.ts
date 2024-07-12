@@ -6,7 +6,7 @@ export interface CreateLikeRequestParams {
 export interface CreateLikeResponse {
   ok: boolean;
   message: string;
-  data: {
+  data?: {
     id: string;
     userId: string;
     tweetId: string;

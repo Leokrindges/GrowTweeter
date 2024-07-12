@@ -1,16 +1,7 @@
 export interface SignUpRequestBody {
   ok: boolean;
   message: string;
-  data: {
-    name: string;
-    email: string;
-    username: string;
-    password: string;
-    createdAt: Date;
-    deleted: boolean;
-    deletedAt: Date | null;
-    authToken: string | null;
-  };
+  data: User;
 }
 
 export interface User {
@@ -24,4 +15,3 @@ export interface User {
   deletedAt: Date | null;
   authToken: string | null;
 }
-
