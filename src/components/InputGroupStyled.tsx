@@ -4,7 +4,12 @@ export const InputGroupStyled = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
+  form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   label {
     padding-top: 6px;
@@ -21,6 +26,7 @@ export const InputGroupStyled = styled.div`
     border: 1px solid rgb(221, 221, 221);
     padding: 5px;
     background-color: #e8f0fe;
+    font-size: 10px;
   }
 
   ::placeholder {
