@@ -1,5 +1,5 @@
 export interface Credentials {
-  email?: string;
-  username?: string;
-  passeord: string;
+  email?: string | null;
+  username?: string | null;
+  password: string;
 }
